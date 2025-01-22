@@ -1,0 +1,332 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.6rem;
+}
+
+:root {
+    font-size: 62.5%;
+    --cor-1: #FF5678;
+    --cor-2: #C0EBF4;
+    --cor-3: #35E6E9;
+    --cor-4: #000000;
+    --cor-5: #FFFFFF;
+    --border: 0.1rem solid rgba(0, 0, 0, 0.15);
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+span {
+    color: var(--cor-1);
+}
+
+aside {
+    text-align: center;
+    grid-area: hero;
+}
+
+h1 {
+    font-size: 6.4rem;
+    font-weight: 500;
+}
+
+main {
+    width: 60rem;
+    height: 52rem;
+    border: var(--border);
+    border-radius: 1.2rem;
+    padding: 3.9rem 5.7rem 4.9rem 5.7rem;
+    text-align: center;
+    grid-area: form;
+    position: relative;
+}
+
+main h2 {
+    width: 43rem;
+    font-size: 3.6rem;
+    text-align: left;
+}
+
+.buttons a {
+    width: 49rem;
+    height: 5.5rem;
+    color: var(--cor-5);
+    border: 0.2rem solid var(--cor-2);
+    border-radius: 1.2rem;
+    font-size: 2.4rem;
+    font-family: "Poppins", sans-serif;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+}
+
+.buttons a:hover {
+    transform: scale(1.1);
+}
+
+#cadastro {
+    background-color: var(--cor-3);
+    margin-top: 5.4rem;
+    font-family: "Poppins", sans-serif;
+}
+
+#ver_entidades {
+    background-color: var(--cor-1);
+    margin-top: 4.8rem;
+    font-family: "Poppins", sans-serif;
+}
+
+#cadastro:active {
+    background-color: #249092;
+}
+
+#ver_entidades:active {
+    background-color: #993246;
+}
+
+#text {
+    margin-top: 7.9rem;
+    font-size: 1.4rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+}
+
+#link {
+    margin-top: 0.9rem;
+    font-size: 1.8rem;
+    font-family: "Poppins", sans-serif;
+    color: var(--cor-4);
+    font-weight: 500;
+}
+
+.fa-arrow-left {
+    color: var(--cor-1);
+    font-size: 4rem;
+}
+
+.cadastro div {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.cadastro form {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-top: 1.6rem;
+}
+
+.cadastro form label {
+    margin-bottom: 1rem;
+}
+
+
+.cadastro form input,
+select {
+    width: 49rem;
+    height: 5.5rem;
+    border: var(--border);
+    border-radius: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.cadastro form select {
+    appearance: none;
+}
+
+.select-div {
+    position: relative;
+}
+
+.select-div::after {
+    top: 1.5rem;
+    right: 1rem;
+    font-size: 2.4rem;
+    content: "\f107";
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 600;
+    color: var(--cor-3);
+    position: absolute;
+    z-index: 1;
+}
+
+.cadastro button {
+    width: 49rem;
+    height: 5.5rem;
+    font-size: 3.6rem;
+    color: var(--cor-5);
+    background-color: var(--cor-3);
+    border: 0.2rem solid var(--cor-2);
+    border-radius: 1.2rem;
+    margin-top: calc(1rem + 3.1rem);
+}
+
+.fa-circle-plus {
+    font-size: 2.4rem;
+    color: var(--cor-3);
+    position: absolute;
+    top: 33.2rem;
+    right: 1.7rem;
+}
+
+
+.cadastro_campo_atuacao p {
+    text-align: center;
+}
+
+.cadastro_campo_atuacao p+p {
+    margin-top: 0.7rem;
+    margin-bottom: 2.1rem;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content h1{
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+
+.ong {
+    width: 80rem;
+    height: 50rem;
+}
+
+.ong .title{
+    display: flex;
+    gap: 2rem;
+}
+
+.ong .entidades div{
+    display: flex;
+    align-items: center ;
+    gap: 2.8rem;
+    margin-bottom: 2.2rem;
+    font-size: 2.4rem;
+    font-weight: 500;
+}
+
+.ong .entidades div a{
+    text-decoration: underline var(--cor-1);
+}
+
+.entidades {
+    margin-top: 4.4rem;
+    margin-bottom: 6.4rem;
+}
+
+.ong div div p+p{
+    width: 28rem;
+    padding: 0.5rem 0;
+    color: var(--cor-3);
+    border: 0.1rem solid var(--cor-3);
+    border-radius: 1.2rem;
+    text-align: center;
+    transition: .2s ease-in-out;
+
+}
+
+.ong div div p+p:hover{
+    background-color: #249092;
+    color: var(--cor-5);
+}
+
+hr{
+    width: 62rem;
+    margin-bottom: 2.6rem;
+}
+
+
+
+@media screen and (width >= 1000px) {
+
+    .container {
+        grid-template-areas:
+            ". . . . ."
+            ". hero . form ."
+            ". hero . form ."
+            ". . . . ."
+        ;
+
+        gap: 9rem;
+    }
+
+}
+
+@media screen and (width <= 1000px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        gap: 5rem;
+    }
+
+    aside img {
+        display: none;
+    }
+}
+
+
+@media screen and (width <= 768px) {
+    body {
+        font-size: 1.4rem;
+    }
+
+    main {
+        width: 90%;
+        height: auto;
+        padding: 2rem;
+    }
+
+    main h2 {
+        font-size: 3rem;
+    }
+
+    .buttons a {
+        width: 100%;
+        font-size: 2rem;
+    }
+}
+
+
+@media screen and (width <= 480px) {
+    body {
+        font-size: 1.2rem;
+    }
+
+    h1 {
+        font-size: 5rem;
+    }
+
+    main {
+        width: 90%;
+        height: auto;
+        padding: 1.5rem;
+    }
+
+    main h2 {
+        width: 100%;
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    .buttons a {
+        font-size: 1.8rem;
+    }
+}
